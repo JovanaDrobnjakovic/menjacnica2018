@@ -55,7 +55,7 @@ public class GUIKontroler {
 			if (returnVal == JFileChooser.APPROVE_OPTION) {
 				File file = fc.getSelectedFile();
 				menjacnica.ucitajIzFajla(file.getAbsolutePath());
-				gp.prikaziSveValute();
+				MenjacnicaGUI.prikaziSveValute();
 			}
 		} catch (Exception e1) {
 			JOptionPane.showMessageDialog(gp, e1.getMessage(), "Greska", JOptionPane.ERROR_MESSAGE);
